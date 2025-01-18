@@ -1,0 +1,13 @@
+[package]
+name = "testcontainers-example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.95"
+tokio = { version = "1.43.0", features = ["full"] }
+redis = { version = "0.28.1", features = ["tokio-comp"] }
+
+[dev-dependencies]
+serial_test = "3.2.0"
+testcontainers = "0.23.1"
